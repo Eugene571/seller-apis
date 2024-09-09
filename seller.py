@@ -21,7 +21,7 @@ def get_product_list(last_id, client_id, seller_token):
         seller_token (str): Токен продавца для авторизации в API.
 
     Returns:
-        dict: Ответ API в виде словаря, содержащий список товаров и другие данные.            
+        dict: Ответ API в виде словаря, содержащий список товаров и другие данные.
     """
     url = "https://api-seller.ozon.ru/v2/product/list"
     headers = {
@@ -77,7 +77,7 @@ def update_price(prices: list, client_id, seller_token):
         seller_token (str): Токен продавца для авторизации в API.
 
     Returns:
-        dict: Ответ API в виде словаря.
+        dict: Ответ API в виде словаря, содержащий информацию о результате обновления цен товаров.
     """
     url = "https://api-seller.ozon.ru/v1/product/import/prices"
     headers = {
@@ -100,7 +100,7 @@ def update_stocks(stocks: list, client_id, seller_token):
         seller_token (str): Токен продавца для авторизации в API.
 
     Returns:
-        dict: Ответ API в виде словаря.
+        dict: Ответ API в виде словаря, содержащий информацию о результате обновления остатков товаров.
     """
     url = "https://api-seller.ozon.ru/v1/product/import/stocks"
     headers = {
