@@ -50,7 +50,7 @@ def update_stocks(stocks, campaign_id, access_token):
         access_token (str): Токен доступа к API Яндекс.Маркета.
 
     Returns:
-        dict: Ответ API в виде словаря.
+        dict: Ответ API в виде словаря, содержащий информацию о результате обновления остатков товаров.
     """
     endpoint_url = "https://api.partner.market.yandex.ru/"
     headers = {
@@ -77,7 +77,7 @@ def update_price(prices, campaign_id, access_token):
         access_token (str): Токен доступа к API Яндекс.Маркета.
 
     Returns:
-        dict: Ответ API в виде словаря.
+        dict: Ответ API в виде словаря, содержащий информацию о результате обновления цен товаров.
     """
     endpoint_url = "https://api.partner.market.yandex.ru/"
     headers = {
@@ -291,3 +291,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
